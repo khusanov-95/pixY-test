@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>title</title>
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+
+  <!--Header-->
+
+    <header class="header">
+      <div class="container">
+        <div class="header__info">
+          <div class="header__info-left">
+            <p class="header__text text">Bozor.<span class="text-accent">com</span>га Хуш келибсиз. Иш вақти: <span class="text-accent">Душ-Якш 9:00 - 17:00</span></p>
+          </div>
+          <div class="header__info-right">
+            <a href="tel:998998300001" class="header__phone phone"><img src="images/dest/icons/phone-icon.png" alt="Phone:">Телефон: (+99) 830 00 01 - (+99) 830 00 02</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <!--Header End-->
+
+  <!--Main-->
+
+    <section class="main sectioin">
+      <div class="container">
+         <!--Main Top-->
+        <div class="main__top">
+          <div class="main__top-left">
+            <div class="main__logo">
+              <img src="images/dest/logo.png" alt="Bozor.com">
+            </div>
+          </div>
+          <div class="main__top-right">
+            <div class="main__search-wrap">
+              <form class="main__search-form">
+                <input type="text" class="main__search-input" placeholder="Қидириш">
+                <select class="main__search-select">
+                  <option value="BarchaKat">Барча категориялар</option>
+                </select>
+                <button class="main__search-btn btn" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+            <div class="main__user-shop">
+              <button class="main__user-btn btn"><img src="images/dest/icons/user-icon.png" alt="user"></button>
+              <button class="main__user-shop-btn btn">
+                <!-- <span>0</span> -->
+                <img src="images/dest/icons/shop-cart-icon.png" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Main Top End-->
+      </div> <!--Container ends-->
+        <!--Main Content-->
+        <div class="main__content">
+          <div class="main__content-top">
+            <div class="container">
+              <div class="main__content-top-inner">
+                <div class="main__content-heading">
+                  <h3>Категориялар</h3>
+                  <button class="main__humburger btn"><i class="fas fa-bars"></i></button>
+                </div>
+                <nav class="main__nav">   
+                  <ul class="main__navlinks">
+                    <li class="main__navlink"><a href="#">Бош саҳифа</a></li>
+                    <li class="main__navlink"><a href="#">Биз ҳақимизда </a></li>
+                    <li class="main__navlink"><a href="#">Чегирмалар</a></li>
+                    <li class="main__navlink"><a href="#">Биз билан алоқа</a></li>
+                  </ul>
+                </nav>
+                <nav class="main__nav-mobile">   
+                  <ul class="main__navlinks-mobile">
+                    <li class="main__navlink"><a href="#">Бош саҳифа</a></li>
+                    <li class="main__navlink"><a href="#">Биз ҳақимизда </a></li>
+                    <li class="main__navlink"><a href="#">Чегирмалар</a></li>
+                    <li class="main__navlink"><a href="#">Биз билан алоқа</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+            <div class="container">
+            <div class="main__categories">
+              <div class="main__categories-nav">
+                <ul class="main__categories-nav-links" id="categories-nav-links">
+                  <li class="main__categories-nav-link main__categories-nav-link--active" id="ozik-ovkat"><i class="fas fa-desktop"></i><span class="hidden-for-m">Озик овкат махсулотлари</span></li>
+                  <li class="main__categories-nav-link" id="mashiy-texnika-vosit"><i class="fas fa-mobile-alt"></i><span class="hidden-for-m">Маиший техника воситалари</span></li>
+                  <li class="main__categories-nav-link" id="telefon-gadjet"><i class="fas fa-futbol"></i><span class="hidden-for-m">Телефон, гаджет, аксессуарлар</span></li>
+                  <li class="main__categories-nav-link" id="mayshiy-texnika"><i class="fas fa-leaf"></i><span class="hidden-for-m">Маиший техника</span></li>
+                  <li class="main__categories-nav-link" id="oshxona-texnika"><i class="fas fa-tags"></i><span class="hidden-for-m">Ошхона техникаси</span></li>
+                  <li class="main__categories-nav-link" id="sport-anjomlari"><i class="fas fa-shopping-basket"></i><span class="hidden-for-m">Спорт анжомлари</span></li>
+                  <li class="main__categories-nav-link" id="guzallik-satomatlik"><i class="fas fa-camera-retro"></i><span class="hidden-for-m">Гўзаллик ва саломатлик</span></li>
+                  <li class="main__categories-nav-link" id="avto-jihozlar"><i class="fas fa-plug"></i><span class="hidden-for-m">Авто жиҳозлар</span></li>
+                  <li class="main__categories-nav-link" id="barchasi-ofis"><i class="fas fa-headphones"></i><span class="hidden-for-m">Барчаси офис, уй ва боғ учун</span></li>
+                  <li class="main__categories-nav-link" id="bolalar-uchun"><i class="fab fa-apple"></i><span class="hidden-for-m">Болалар учун ўйинчоқ ва маҳсулотлар</span></li>
+                </ul>
+              </div>
+            <!-- Content opens when main__categories-nav-link is clicked-->
+            <div class="main__content-categories main__content-categories--active" id="ozik-ovkat-container">
+              <div class="main__content-boxes">
+                <div class="main__content-box">
+                  <h4 class="main__content-box-header">Sabzavot va mevalar</h4>
+                  <ul class="main__content-box-links">
+                    <li class="main__content-box-link"><a href="#">Hammasi</a></li>
+                    <li class="main__content-box-link"><a href="#">Sabzavotlar</a></li>
+                    <li class="main__content-box-link"><a href="#">Meva</a></li>
+                    <li class="main__content-box-link"><a href="#">Ko'katlar</a></li>
+                    <li class="main__content-box-link"><a href="#">Quritilgan mevalar/Yong'oqlar</a></li> 
+                  </ul>
+                </div>
+                <div class="main__content-box">
+                  <h4 class="main__content-box-header">Go'sht va go'sht mahsulotlari</h4>
+                  <ul class="main__content-box-links">
+                    <li class="main__content-box-link"><a href="#">Hammasi</a></li>
+                    <li class="main__content-box-link"><a href="#">Mol go'shti</a></li>
+                    <li class="main__content-box-link"><a href="#">Qo'y go'shti</a></li>
+                    <li class="main__content-box-link"><a href="#">Parranda go'shti</a></li>
+                    <li class="main__content-box-link show-all-link"><a href="#">Хаммасини корсатиш »</a></li> 
+                  </ul>
+                </div>
+                <div class="main__content-box">
+                  <h4 class="main__content-box-header">Yuvish vositalari</h4>
+                  <ul class="main__content-box-links">
+                    <li class="main__content-box-link"><a href="#">Hammasi</a></li>
+                    <li class="main__content-box-link"><a href="#">Kir yuvish kukunlari</a></li>
+                    <li class="main__content-box-link"><a href="#">Kiyimni parvarish qilish uchun vositalar</a></li>
+                    <li class="main__content-box-link">Tozalovchi va yuvish vositalari<a href="#"></a></li>
+                    <li class="main__content-box-link show-all-link">Хаммасини корсатиш »<a href="#"></a></li> 
+                  </ul>
+                </div>
+                <div class="main__content-box">
+                  <h4 class="main__content-box-header">Tuxum / Sut va sut mahsulotlari</h4>
+                  <ul class="main__content-box-links">
+                    <li class="main__content-box-link"><a href="#">Hammasi</a></li>
+                    <li class="main__content-box-link"><a href="#">Sut/Sut kokteyllari</a></li>
+                    <li class="main__content-box-link">Qatiq/Ryajenka/Ayron<a href="#"></a></li>
+                    <li class="main__content-box-link">Yogurt<a href="#"></a></li>
+                    <li class="main__content-box-link">Qaymoq/Slivki<a href="#"></a></li>
+                    <li class="main__content-box-link show-all-link">Хаммасини корсатиш »<a href="#"></a></li> 
+                  </ul>
+                </div>
+                <div class="main__content-box">
+                  <h4 class="main__content-box-header">Tuxum / Sut va sut mahsulotlari</h4>
+                  <ul class="main__content-box-links">
+                    <li class="main__content-box-link"><a href="#">Hammasi</a></li>
+                    <li class="main__content-box-link"><a href="#">Sut/Sut kokteyllari</a></li>
+                    <li class="main__content-box-link"><a href="#">Qatiq/Ryajenka/Ayron</a></li>
+                    <li class="main__content-box-link"><a href="#">Yogurt</a></li>
+                    <li class="main__content-box-link"><a href="#">Qaymoq/Slivki</a></li> 
+                    <li class="main__content-box-link show-all-link">Хаммасини корсатиш »<a href="#"></a></li> 
+                  </ul>
+                </div>
+                <div class="main__content-box main__content-box-with-img">
+                  <div class="main__content-box-inner">
+                    <img src="images/dest/logo-w-pic.jpg" alt="Bozor.com">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main__content-categories" id="mashiy-texnika-vosit-container">
+              <div class="main__content-boxes">
+                <div class="main__content-box">
+                </div>
+                <div class="main__content-box">
+                </div>
+                <div class="main__content-box">
+                </div>
+                <div class="main__content-box">
+                </div>
+                <div class="main__content-box">
+                </div>
+                <div class="main__content-box main__content-box-with-img">
+                  <div class="main__content-box-inner">
+                    <img src="images/dest/logo-w-pic.jpg" alt="Bozor.com">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main__content-categories" id="telefon-gadjet-container">
+              <div class="main__content-boxes">
+                <div class="main__content-box">
+                </div>
+                <div class="main__content-box">
+                </div>
+                <div class="main__content-box">
+                </div>
+                <div class="main__content-box">
+                </div>
+                <div class="main__content-box">
+                </div>
+                <div class="main__content-box main__content-box-with-img">
+                  <div class="main__content-box-inner">
+                    <img src="images/dest/logo-w-pic.jpg" alt="Bozor.com">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Main Content End-->
+      </div>
+    </section>
+
+  <!--Main End-->
+  <!-- Brands -->
+  <div class="brands">
+    <div class="container">
+      <div class="brands__heading section-heading-wrap">
+        <h2 class="section-heading">Брендлар</h2>
+        <a class="show-all-link" href="#">Хамма Брендлар »</a>
+      </div>
+      <!-- Brands Carousel-->
+      <div class="brands__carousel">
+        <div class="brands__carousel-item">
+          <img src="images/dest/carousels/brands/brand-img1.png" alt="logo">
+        </div>
+        <div class="brands__carousel-item">
+          <img src="images/dest/carousels/brands/brand-img2.png" alt="logo">
+        </div>
+        <div class="brands__carousel-item">
+          <img src="images/dest/carousels/brands/brand-img3.png" alt="logo">
+        </div>
+        <div class="brands__carousel-item">
+          <img src="images/dest/carousels/brands/brand-img4.png" alt="logo">
+        </div>
+        <div class="brands__carousel-item">
+          <img src="images/dest/carousels/brands/brand-img5.png" alt="logo">
+        </div>
+        <div class="brands__carousel-item">
+          <img src="images/dest/carousels/brands/brand-img6.png" alt="logo">
+        </div>
+        <div class="brands__carousel-item">
+          <img src="images/dest/carousels/brands/brand-img7.png" alt="logo">
+        </div>
+        <div class="brands__carousel-item">
+          <img src="images/dest/carousels/brands/brand-img1.png" alt="logo">
+        </div>
+        <div class="brands__carousel-item">
+          <img src="images/dest/carousels/brands/brand-img2.png" alt="logo">
+        </div>
+        <div class="brands__carousel-item">
+          <img src="images/dest/carousels/brands/brand-img3.png" alt="logo">
+        </div>
+        <div class="brands__carousel-item">
+          <img src="images/dest/carousels/brands/brand-img4.png" alt="logo">
+        </div>
+        <div class="brands__carousel-item">
+          <img src="images/dest/carousels/brands/brand-img5.png" alt="logo">
+        </div>
+        <div class="brands__carousel-item">
+          <img src="images/dest/carousels/brands/brand-img6.png" alt="logo">
+        </div>
+        <div class="brands__carousel-item">
+          <img src="images/dest/carousels/brands/brand-img7.png" alt="logo">
+        </div>
+      </div>
+      <!-- Brands Carousel End-->
+    </div>
+  </div>
+<!-- Brands End -->
+
+<!-- Hits -->
+
+<div class="hits">
+  <div class="container">
+    <div class="hits__heading section-heading-wrap">
+      <h2 class="section-heading">Хитлар</h2>
+      <a class="show-all-link" href="#">Хамма Хитлар »</a>
+    </div>
+    <!-- Hits Carousel-->
+    <div class="hits__carousel">
+      <div class="hits__carousel-item" id="hits-item1">
+        <div class="hits__carousel-item-imgwrap">
+          <span class="hits__carousel-item-discount">20%</span>
+          <img src="images/dest/carousels/hits/hits-img1.png" alt="logo">
+          <span class="hits__carousel-item-expand-icon">
+            <img src="images/dest/icons/expand-icon.png" alt="ex">
+          </span>
+        </div>
+        <div class="hits__carousel-item-descr">
+          <div class="hits__carousel-item-heading">Музлаткич LG 2050</div>
+          <div class="hits__carousel-item-price">
+            <span class="old-price">2.800.000</span>
+            <span class="new-price">2.500.000</span>
+          </div>
+          <div class="hits__carousel-item-counter">
+            <button class="counter-minus"><img src="images/dest/icons/minus.png" alt="-"></button>
+            <span class="counter-display">0</span>
+            <button class="counter-plus"><img src="images/dest/icons/plus.png" alt="+"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hits__carousel-item" id="hits-item2">
+        <div class="hits__carousel-item-imgwrap">
+          <img src="images/dest/carousels/hits/hits-img2.png" alt="logo">
+          <span class="hits__carousel-item-expand-icon">
+            <img src="images/dest/icons/expand-icon.png" alt="ex">
+          </span>
+        </div>
+        <div class="hits__carousel-item-descr">
+          <div class="hits__carousel-item-heading">Кондиционер Gree 156</div>
+          <div class="hits__carousel-item-price">
+            <span class="new-price">1.595.000</span>
+          </div>
+          <div class="hits__carousel-item-counter">
+            <button class="counter-minus"><img src="images/dest/icons/minus.png" alt="-"></button>
+            <span class="counter-display">0</span>
+            <button class="counter-plus"><img src="images/dest/icons/plus.png" alt="+"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hits__carousel-item" id="hits-item3">
+        <div class="hits__carousel-item-imgwrap">
+          <img src="images/dest/carousels/hits/hits-img3.png" alt="logo">
+          <span class="hits__carousel-item-expand-icon">
+            <img src="images/dest/icons/expand-icon.png" alt="ex">
+          </span>
+        </div>
+        <div class="hits__carousel-item-descr">
+          <div class="hits__carousel-item-heading">Телевизор Samsung 54 диагональ</div>
+          <div class="hits__carousel-item-price">
+            <span class="new-price">2.500.000</span>
+          </div>
+          <div class="hits__carousel-item-counter">
+            <button class="counter-minus"><img src="images/dest/icons/minus.png" alt="-"></button>
+            <span class="counter-display">0</span>
+            <button class="counter-plus"><img src="images/dest/icons/plus.png" alt="+"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hits__carousel-item" id="hits-item4">
+        <div class="hits__carousel-item-imgwrap">
+          <img src="images/dest/carousels/hits/hits-img4.png" alt="logo">
+          <span class="hits__carousel-item-expand-icon">
+            <img src="images/dest/icons/expand-icon.png" alt="ex">
+          </span>
+        </div>
+        <div class="hits__carousel-item-descr">
+          <div class="hits__carousel-item-heading">Galaxy S8 Smartphone</div>
+          <div class="hits__carousel-item-price">
+            <span class="new-price">1.595.000</span>
+          </div>
+          <div class="hits__carousel-item-counter">
+            <button class="counter-minus"><img src="images/dest/icons/minus.png" alt="-"></button>
+            <span class="counter-display">0</span>
+            <button class="counter-plus"><img src="images/dest/icons/plus.png" alt="+"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hits__carousel-item" id="hits-item5">
+        <div class="hits__carousel-item-imgwrap">
+          <img src="images/dest/carousels/hits/hits-img5.png" alt="logo">
+          <span class="hits__carousel-item-expand-icon">
+            <img src="images/dest/icons/expand-icon.png" alt="ex">
+          </span>
+        </div>
+        <div class="hits__carousel-item-descr">
+          <div class="hits__carousel-item-heading">Кондиционер LG 854</div>
+          <div class="hits__carousel-item-price">
+            <span class="new-price">2.500.000</span>
+          </div>
+          <div class="hits__carousel-item-counter">
+            <button class="counter-minus"><img src="images/dest/icons/minus.png" alt="-"></button>
+            <span class="counter-display">0</span>
+            <button class="counter-plus"><img src="images/dest/icons/plus.png" alt="+"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hits__carousel-item" id="hits-item6">
+        <div class="hits__carousel-item-imgwrap">
+          <span class="hits__carousel-item-discount">20%</span>
+          <img src="images/dest/carousels/hits/hits-img1.png" alt="logo">
+          <span class="hits__carousel-item-expand-icon">
+            <img src="images/dest/icons/expand-icon.png" alt="ex">
+          </span>
+        </div>
+        <div class="hits__carousel-item-descr">
+          <div class="hits__carousel-item-heading">Музлаткич LG 2050</div>
+          <div class="hits__carousel-item-price">
+            <span class="old-price">2.800.000</span>
+            <span class="new-price">2.500.000</span>
+          </div>
+          <div class="hits__carousel-item-counter">
+            <button class="counter-minus"><img src="images/dest/icons/minus.png" alt="-"></button>
+            <span class="counter-display">0</span>
+            <button class="counter-plus"><img src="images/dest/icons/plus.png" alt="+"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hits__carousel-item" id="hits-item7">
+        <div class="hits__carousel-item-imgwrap">
+          <img src="images/dest/carousels/hits/hits-img2.png" alt="logo">
+          <span class="hits__carousel-item-expand-icon">
+            <img src="images/dest/icons/expand-icon.png" alt="ex">
+          </span>
+        </div>
+        <div class="hits__carousel-item-descr">
+          <div class="hits__carousel-item-heading">Кондиционер Gree 156</div>
+          <div class="hits__carousel-item-price">
+            <span class="new-price">1.595.000</span>
+          </div>
+          <div class="hits__carousel-item-counter">
+            <button class="counter-minus"><img src="images/dest/icons/minus.png" alt="-"></button>
+            <span class="counter-display">0</span>
+            <button class="counter-plus"><img src="images/dest/icons/plus.png" alt="+"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hits__carousel-item" id="hits-item8">
+        <div class="hits__carousel-item-imgwrap">
+          <img src="images/dest/carousels/hits/hits-img3.png" alt="logo">
+          <span class="hits__carousel-item-expand-icon">
+            <img src="images/dest/icons/expand-icon.png" alt="ex">
+          </span>
+        </div>
+        <div class="hits__carousel-item-descr">
+          <div class="hits__carousel-item-heading">Телевизор Samsung 54 диагональ</div>
+          <div class="hits__carousel-item-price">
+            <span class="new-price">2.500.000</span>
+          </div>
+          <div class="hits__carousel-item-counter">
+            <button class="counter-minus"><img src="images/dest/icons/minus.png" alt="-"></button>
+            <span class="counter-display">0</span>
+            <button class="counter-plus"><img src="images/dest/icons/plus.png" alt="+"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hits__carousel-item" id="hits-item9">
+        <div class="hits__carousel-item-imgwrap">
+          <img src="images/dest/carousels/hits/hits-img4.png" alt="logo">
+          <span class="hits__carousel-item-expand-icon">
+            <img src="images/dest/icons/expand-icon.png" alt="ex">
+          </span>
+        </div>
+        <div class="hits__carousel-item-descr">
+          <div class="hits__carousel-item-heading">Galaxy S8 Smartphone</div>
+          <div class="hits__carousel-item-price">
+            <span class="new-price">1.595.000</span>
+          </div>
+          <div class="hits__carousel-item-counter">
+            <button class="counter-minus"><img src="images/dest/icons/minus.png" alt="-"></button>
+            <span class="counter-display">0</span>
+            <button class="counter-plus"><img src="images/dest/icons/plus.png" alt="+"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hits__carousel-item" id="hits-item10">
+        <div class="hits__carousel-item-imgwrap">
+          <img src="images/dest/carousels/hits/hits-img5.png" alt="logo">
+          <span class="hits__carousel-item-expand-icon">
+            <img src="images/dest/icons/expand-icon.png" alt="ex">
+          </span>
+        </div>
+        <div class="hits__carousel-item-descr">
+          <div class="hits__carousel-item-heading">Кондиционер LG 854</div>
+          <div class="hits__carousel-item-price">
+            <span class="new-price">2.500.000</span>
+          </div>
+          <div class="hits__carousel-item-counter">
+            <button class="counter-minus"><img src="images/dest/icons/minus.png" alt="-"></button>
+            <span class="counter-display">0</span>
+            <button class="counter-plus"><img src="images/dest/icons/plus.png" alt="+"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+    <!-- Hits Carousel End-->
+  </div>
+</div>
+
+<!-- Hits End-->
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

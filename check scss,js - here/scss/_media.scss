@@ -1,0 +1,239 @@
+@media only screen and (max-width: 1440px){
+  .container {
+    padding: 0 2.5%;
+  }
+  .main {
+    &__search-form {
+      width: 700px;
+    }
+    &__search-input {
+      width: 60%;
+    }
+    &__search-select {
+      width: 170px;
+    }
+    &__content-heading {
+      width: 255px;
+    }
+ 
+    &__categories-nav {
+      min-width: 255px;
+      width: 255px;
+    }
+     
+  }
+  
+}
+
+
+@media only screen and (max-width: 1200px){
+  .main {
+    &__search-form {
+      width: 552px;
+    }
+    &__search-input {
+      width: 60%;
+    }
+    &__search-select {
+      width: 170px;
+      background: url(../images/dest/icons/select-arrow.png) no-repeat 154px 17px;
+    }
+    .main__navlink {
+      font-size: 14px;
+    }
+    &__content-heading {
+      width: 220px;
+      h3 {
+        font-size: 14px;
+      }
+    }
+    &__categories-nav {
+      min-width: 220px;
+      width: 220px;
+    }
+    &__categories-nav-link {
+      padding: 16px 10px;
+      font-size: 12px;
+    }
+    &__content-categories {
+      padding: 15px;
+    }
+    &__content-box:nth-child(1), &__content-box:nth-child(4) {
+      min-width: 28%;
+      width: 28%;
+    }
+    &__content-box:nth-child(2), &__content-box:nth-child(5) {
+      padding: 0 30px;
+    }
+    &__content-box:nth-child(3), &__content-box:nth-child(6) {
+      padding: 0 35px;
+    }
+    &__content-box:nth-child(4), &__content-box:nth-child(5), &__content-box:nth-child(6)  {
+      padding-top: 20px;
+    }
+  }
+}
+  
+
+@media only screen and (max-width: 992px){
+  .main {
+    &__top {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__logo {
+      margin: 0;
+      margin-top: 20px;
+    }
+    &__top-right {
+      flex-direction: column;
+      width: 100%;
+    }
+    &__user-shop {
+      margin: 0;
+      margin-bottom: 25px;
+      display: flex;
+      justify-content: center;
+    }
+    &__search-form {
+      width: 100%;
+    }
+    &__search-input {
+      width: 60%;
+    }
+    &__search-select {
+      width: 36%;
+      background: url(../images/dest/icons/select-arrow.png) no-repeat 160px 17px;
+    }
+    &__content-heading {
+      width: 200px;
+      h3 {
+        font-size: 14px;
+      }
+    }
+    &__categories-nav {
+      width: 36px;
+      min-width: 36px;
+      .hidden-for-m {
+        display: none;
+      }
+    }
+    &__content-box:nth-child(2), &__content-box:nth-child(5) {
+      padding: 0 20px;
+    }
+    &__content-box:nth-child(3), &__content-box:nth-child(6) {
+      padding: 0 15px;
+    }
+    &__content-box:nth-child(4), &__content-box:nth-child(5), &__content-box:nth-child(6)  {
+      padding-top: 10px;
+    }
+  }
+}
+ 
+@media only screen and (max-width: 768px){
+.header {
+  font-size: 11px;
+  &__info {
+    padding: 0;
+  }
+}
+//mobile nav 
+.main__nav-mobile {
+  // display: block;
+  background-color: $accent-dark;
+  position: absolute;
+  top: -1px;
+  left: 200px;
+  padding: 10px 0;
+  z-index: 2;
+  .main__navlink {
+    color: #fff;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+.main__nav-mobile.main__nav-mobile--active {
+  display: block;
+}
+.main {
+  &__nav {
+    display: none;
+  }
+  &__content-top-inner {
+    flex-direction: column;
+  }
+  &__content-heading {
+    h3 {
+      font-size: 14px;
+    }
+  }
+  &__categories-nav {
+    width: 36px;
+    min-width: 36px;
+    .hidden-for-m {
+      display: none;
+    }
+  }
+  &__content-box:nth-child(1), &__content-box:nth-child(4) {
+    min-width: 100%;
+    width: 100%;
+    border: none;
+    padding: 0 15px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  &__content-box:nth-child(2), &__content-box:nth-child(5) {
+    min-width: 100%;
+    width: 100%;
+    border: none;
+    padding: 0 15px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  &__content-box:nth-child(3), &__content-box:nth-child(6) {
+    min-width: 100%;
+    width: 100%;
+    border: none;
+    padding: 0 15px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+ &__content-box-header {
+   margin-bottom: 10px;
+ }
+ &__content-box-link {
+   margin-bottom: 8px;
+ }
+ &__content-box-link:last-child {
+  margin-bottom: 10px;
+}
+}
+}
+
+
+
+@media only screen and (max-width: 600px){
+  .header {
+    padding-bottom: 10px;
+    font-size: 10px;
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .main {
+    &__search-input {
+      width: 95%;
+    }
+    &__search-select {
+      display: none;
+    }
+  }
+  .section-heading {
+    font-size: 16px;
+  }
+  .section-heading-wrap a {
+    font-size: 12px;
+  }
+}

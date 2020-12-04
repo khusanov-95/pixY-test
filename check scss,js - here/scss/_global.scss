@@ -1,0 +1,119 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.75;
+  font-family: $default-font;
+  font-weight: 400;
+  overflow-x: hidden;
+  opacity: 1;
+
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1430px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.text-accent {
+  color: $accent;
+  font-family: 'Roboto-Bold',sans-serif;
+  font-weight: 700;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.show-all-link {
+  color: #000!important;
+}
+// categories active classes 
+.main__content-categories {
+  display: none;
+}
+.main__content-categories--active {
+  display: block;
+}
+//section headings 
+.section-heading-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+      background-color: #e8e8e8;
+      z-index: -1;
+    }
+    a {
+      padding-right: 80px;
+      background-color: #fff;
+      padding-left: 20px;
+    }
+  
+}
+.section-heading {
+  font-size: 22px;
+  font-family: 'Roboto-Bold',sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  padding-right: 20px;
+  background-color: #fff;
+}
+//carousel buttons 
+.prev-arrow, .next-arrow {
+  position: absolute;
+  top: -31px;
+  font-size: 12px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 28px;
+  width: 28px;
+  height: 28px;
+  background-color: $accent;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.prev-arrow {
+  right: 33px;
+}
+.next-arrow {
+  right: 0;
+}
+.prev-arrow.slick-disabled,.next-arrow.slick-disabled {
+  background-color: #fff;
+  color: #555555;
+  border: 1px solid #e5e5e5;
+}
+
+// hide mobile menu 
+.main__nav-mobile {
+  display: none;
+}
